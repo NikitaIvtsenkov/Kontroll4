@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <session-config>
+        <session-timeout>
+            1200
+        </session-timeout>
+    </session-config>
+    <jsp-config>
+        <jsp-property-group>
+            <display-name>template</display-name>
+            <url-pattern>/index.jsp</url-pattern>
+            <url-pattern>/WEB-INF/products/*</url-pattern>
+            <url-pattern>/WEB-INF/customers/*</url-pattern>
+            <url-pattern>/WEB-INF/admin/*</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+            <include-prelude>/WEB-INF/jspf/header.jspf</include-prelude>
+            <include-coda>/WEB-INF/jspf/footer.jspf</include-coda>
+        </jsp-property-group>
+    </jsp-config>
+</web-app>
